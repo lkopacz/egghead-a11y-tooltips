@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Egghead A11y Tooltips</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <form>
+      <label for="name">Name:</label>
+      <span class="a11y-input-tooltip">
+        <input type="text" id="name" aria-describedby="a11y-tooltip" />
+        <span role="tooltip" id="a11y-tooltip"
+          >Please write your first and last name.</span
+        >
+      </span>
+    </form>
+  </body>
+</html>
